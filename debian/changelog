@@ -1,0 +1,69 @@
+node-cli-boxes (2.2.1-2) unstable; urgency=medium
+
+  * Team upload
+  [ Debian Janitor ]
+  * Apply multi-arch hints.
+    + node-cli-boxes: Add Multi-Arch: foreign.
+
+  [ Yadd ]
+  * Modernize debian/watch
+  * Fix GitHub tags regex
+  * Update standards version to 4.6.0, no changes needed.
+  * Drop dependency to nodejs
+
+ -- Yadd <yadd@debian.org>  Fri, 15 Oct 2021 14:25:43 +0200
+
+node-cli-boxes (2.2.1-1) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 13
+  * Use dh-sequence-nodejs
+  * New upstream version 2.2.1
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 02 Nov 2020 13:56:46 +0100
+
+node-cli-boxes (2.2.0-3) unstable; urgency=medium
+
+  * Team upload
+  * Add indication that node-cli-boxes breaks node-boxen < 4 (Closes: #958421)
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 24 Apr 2020 09:01:40 +0200
+
+node-cli-boxes (2.2.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 28 Mar 2020 08:36:49 +0100
+
+node-cli-boxes (2.2.0-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+
+  [ Xavier Guimard ]
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * New upstream version 2.2.0
+  * Use pkg-js-tools auto install
+  * Add patch to use tape instead of ava for test
+  * Enable upstream test
+  * Update copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 02 Feb 2020 19:02:31 +0100
+
+node-cli-boxes (1.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #850399)
+
+ -- suman <suman@protonmail.com>  Sun, 05 Nov 2017 19:29:14 +0000

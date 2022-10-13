@@ -1,0 +1,28 @@
+Source: node-cli-boxes
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: suman <suman@protonmail.com>
+Testsuite: autopkgtest-pkg-nodejs
+Build-Depends:
+ debhelper-compat (= 13)
+ , node-tape <!nocheck>
+ , dh-sequence-nodejs
+Standards-Version: 4.6.0
+Homepage: https://github.com/sindresorhus/cli-boxes
+Vcs-Git: https://salsa.debian.org/js-team/node-cli-boxes.git
+Vcs-Browser: https://salsa.debian.org/js-team/node-cli-boxes
+Rules-Requires-Root: no
+
+Package: node-cli-boxes
+Architecture: all
+Depends:
+ ${misc:Depends}
+Breaks: node-boxen (<< 4)
+Multi-Arch: foreign
+Description: Boxes for use in the terminal
+ The list of boxes is just a JSON file and can be used wherever.
+ .
+ It can be used to create single,double,classic,single etc boxes.
+ .
+ Node.js is an event-based server-side JavaScript engine.
