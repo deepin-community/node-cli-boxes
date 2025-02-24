@@ -5,14 +5,15 @@ Last-Update: 2020-02-02
 
 --- a/test.js
 +++ b/test.js
-@@ -1,7 +1,8 @@
+@@ -1,8 +1,9 @@
 -import test from 'ava';
--import cliBoxes from '.';
+-import cliBoxes from './index.js';
 +const test =require('tape');
 +const cliBoxes =require('.');
  
  test('main', t => {
  	t.is(typeof cliBoxes, 'object');
  	t.is(cliBoxes.single.topLeft, '┌');
+ 	t.is(cliBoxes.arrow.left, '→');
 +	t.end();
  });
