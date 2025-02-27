@@ -1,8 +1,9 @@
 import {expectType} from 'tsd';
-import cliBoxes = require('.');
-import {BoxStyle, Boxes} from '.';
+import cliBoxes = require('./index.js');
+import {BoxStyle, Boxes} from './index.js';
 
-expectType<Boxes>(cliBoxes);
+// TODO: Enable when targeting ESM.
+// expectType<Boxes>(cliBoxes);
 
 expectType<BoxStyle>(cliBoxes.classic);
 expectType<BoxStyle>(cliBoxes.double);
@@ -11,3 +12,4 @@ expectType<BoxStyle>(cliBoxes.round);
 expectType<BoxStyle>(cliBoxes.bold);
 expectType<BoxStyle>(cliBoxes.single);
 expectType<BoxStyle>(cliBoxes.singleDouble);
+expectType<BoxStyle>(cliBoxes.arrow);
